@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_MVV_SAMPLE01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_MVV_SAMPLE01"
+        mc:Ignorable="d"        
+        Title="MainWindow" Height="450" Width="340">
+    <Window.DataContext>
+        <local:ItemViewModel></local:ItemViewModel>
+    </Window.DataContext>
+    <DockPanel>
+        <ListView ItemsSource="{Binding Items}" ItemTemplate="{DynamicResource DataTemplate1}" DockPanel.Dock="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="BIN" Width="150" CellTemplate="{StaticResource DataTemplate1}" ></GridViewColumn>
+                    <GridViewColumn Header="COUNT" Width="Auto"  CellTemplate="{StaticResource DataTemplate2}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+    </DockPanel>
+</Window>
