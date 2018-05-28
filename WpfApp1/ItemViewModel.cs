@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WPF_MVV_SAMPLE01
+namespace WPF_MVVM_SAMPLE01
 {
     public class ItemViewModel
     {

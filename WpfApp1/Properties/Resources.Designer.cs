@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPF_MVV_SAMPLE01.Properties
+namespace WPF_MVVM_SAMPLE01.Properties
 {
 
 

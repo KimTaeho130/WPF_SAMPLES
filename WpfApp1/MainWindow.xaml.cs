@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_MVV_SAMPLE01
+namespace WPF_MVVM_SAMPLE01
 {
     /// <summary>
     /// MainWindow.xaml에 대한 상호 작용 논리

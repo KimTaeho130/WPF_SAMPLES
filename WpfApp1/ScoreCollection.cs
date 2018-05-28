@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WPF_MVV_SAMPLE01
+namespace WPF_MVVM_SAMPLE01
 {
     public class ScoreCollection : ObservableCollection<Score>
     {
@@ -22,6 +22,4 @@ namespace WPF_MVV_SAMPLE01
         public string SUBJECT { get; set; }
         public int SCORE { get; set; }
     }
-
-
 }
