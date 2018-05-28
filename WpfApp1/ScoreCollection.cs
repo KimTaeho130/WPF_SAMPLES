@@ -11,9 +11,9 @@ namespace WPF_MVV_SAMPLE01
     {
         public ScoreCollection()
         {
-            Add(new Score() { SUBJECT = "국어", SCORE = 95 });
-            Add(new Score() { SUBJECT = "영어", SCORE = 55 });
-            Add(new Score() { SUBJECT = "수학", SCORE = 65 });
+            Add(new Score() { SUBJECT = "Englsh", SCORE = 95 });
+            Add(new Score() { SUBJECT = "Mathmatics", SCORE = 55 });
+            Add(new Score() { SUBJECT = "History", SCORE = 65 });
         }
     }
 

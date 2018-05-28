@@ -23,7 +23,6 @@ namespace WPF_MVV_SAMPLE01
         public MainWindow()
         {
             InitializeComponent();
-            //this.DataContext = this;
         }
     }
 }

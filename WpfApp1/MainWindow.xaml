@@ -10,11 +10,11 @@
         <local:ItemViewModel></local:ItemViewModel>
     </Window.DataContext>
     <DockPanel>
-        <ListView ItemsSource="{Binding Items}" ItemTemplate="{DynamicResource DataTemplate1}" DockPanel.Dock="Top">
+        <ListView Width="330" ItemsSource="{Binding Items}" ItemTemplate="{DynamicResource DataTemplate1}" DockPanel.Dock="Top">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="BIN" Width="150" CellTemplate="{StaticResource DataTemplate1}" ></GridViewColumn>
-                    <GridViewColumn Header="COUNT" Width="Auto"  CellTemplate="{StaticResource DataTemplate2}"></GridViewColumn>
+                    <GridViewColumn Header="SUBJECT" Width="150" CellTemplate="{StaticResource DataTemplate1}" ></GridViewColumn>
+                    <GridViewColumn Header="SCORE" Width="180"  CellTemplate="{StaticResource DataTemplate2}"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
