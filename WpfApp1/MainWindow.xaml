@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_MVVM_SAMPLE01"
         mc:Ignorable="d"        
-        Title="MainWindow" Height="450" Width="340"        
+        Title="MainWindow" Height="250" Width="350"        
         >
     <Window.DataContext>
         <local:ItemViewModel></local:ItemViewModel>
     </Window.DataContext>
     
     <DockPanel>
-        <ListView Width="330" ItemsSource="{Binding Items}" ItemTemplate="{DynamicResource DataTemplate1}" DockPanel.Dock="Top">
+        <ListView Width="350" ItemsSource="{Binding Items}" ItemTemplate="{DynamicResource DataTemplate1}" DockPanel.Dock="Top">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="SUBJECT" Width="150" CellTemplate="{StaticResource DataTemplate1}" ></GridViewColumn>
@@ -20,6 +20,5 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        
     </DockPanel>
 </Window>
