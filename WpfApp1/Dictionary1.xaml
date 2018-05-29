@@ -6,8 +6,30 @@
     </DataTemplate>
     <DataTemplate x:Key="DataTemplate2">
         <Grid >
-            <Rectangle Height="30" Width="{Binding SCORE}" StrokeThickness="1" Fill="Red"></Rectangle>
+            <Rectangle HorizontalAlignment="Left" Height="30" Width="{Binding SCORE}" StrokeThickness="1" Fill="Red"></Rectangle>
             <TextBlock Text="{Binding SCORE}"></TextBlock>
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="DataTemplate3">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding SUBJECT}"></TextBlock>
+            <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="30" Width="{Binding SCORE}" StrokeThickness="1" Fill="Red"></Rectangle>
+            <TextBlock Grid.Column="1" Text="{Binding SCORE}"></TextBlock>    
+        </Grid>
+    </DataTemplate>
+    <DataTemplate x:Key="DataTemplate4">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="1" Text="{Binding SUBJECT}"></TextBlock>
+            <Rectangle Grid.Column="0" HorizontalAlignment="Left" Height="30" Width="{Binding SCORE}" StrokeThickness="1" Fill="Red"></Rectangle>
+            <TextBlock Grid.Column="0" Text="{Binding SCORE}"></TextBlock>
         </Grid>
     </DataTemplate>
 
